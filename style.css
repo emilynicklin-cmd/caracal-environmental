@@ -75,7 +75,7 @@ nav {
 /* Logo */
 
 .logo img {
-    width: 150px;
+    width: 225px;
     height: auto;
     display: block;
 }
@@ -124,7 +124,7 @@ nav {
             rgba(0,0,0,0.85) 100%
         );
 
-    padding: 220px 5% 110px;
+    padding: 190px 5% 90px;
 }
 
 .hero-content {
