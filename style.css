@@ -9,9 +9,8 @@
 :root {
     --black: #080808;
     --charcoal: #111111;
-    --charcoal-light: #1a1a1a;
+    --charcoal-light: #181818;
     --orange: #e86f25;
-    --orange-dark: #b94f18;
     --white: #ffffff;
     --off-white: #f4f1ed;
     --grey: #b8b8b8;
@@ -49,27 +48,28 @@ a {
 
 
 /* =========================================
-   NAVIGATION
+   HEADER / NAVIGATION
    ========================================= */
 
 header {
-    position: absolute;
     width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
 }
 
 nav {
-    width: min(1200px, 94%);
+    width: min(1320px, 95%);
     margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
+
 
 /* Logo */
 
@@ -79,17 +79,19 @@ nav {
 }
 
 .logo img {
-    width: 150px;
+    width: 235px;
     height: auto;
     display: block;
 }
+
 
 /* Navigation links */
 
 .nav-links {
     display: flex;
     gap: 38px;
-    padding-top: 18px;
+
+    padding-top: 25px;
 }
 
 .nav-links a {
@@ -119,15 +121,18 @@ nav {
     display: flex;
     align-items: flex-start;
 
-    background: var(--black);
+    background-color: var(--black);
 
-    padding: 300px 3% 110px;
+    padding: 330px 0 110px;
 }
 
 .hero-content {
-    width: min(1200px, 94%);
+    width: min(1320px, 95%);
     margin: 0 auto;
 }
+
+
+/* Orange eyebrow text */
 
 .eyebrow {
     color: var(--orange);
@@ -138,23 +143,29 @@ nav {
     letter-spacing: 4px;
     text-transform: uppercase;
 
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
+
+
+/* Main headline */
 
 .hero h1 {
-    max-width: 900px;
+    max-width: 980px;
 
-    font-size: clamp(46px, 5.5vw, 76px);
+    font-size: clamp(48px, 5.3vw, 76px);
     font-weight: 300;
 
-    line-height: 1.08;
+    line-height: 1.06;
     letter-spacing: -1.5px;
 
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 }
 
+
+/* Hero description */
+
 .hero-text {
-    max-width: 650px;
+    max-width: 690px;
 
     font-size: 17px;
     line-height: 1.8;
@@ -275,7 +286,6 @@ nav {
 
 /* =========================================
    PROCESS
-   Detect → Verify → Alert → Respond
    ========================================= */
 
 .process {
@@ -333,7 +343,7 @@ nav {
 
 
 /* =========================================
-   WHO WE WORK WITH
+   PARTNERS
    ========================================= */
 
 .partner-grid {
@@ -457,12 +467,12 @@ footer div:last-child {
 @media (max-width: 850px) {
 
     nav {
-        padding: 20px 0;
-        align-items: flex-start;
+        width: 90%;
+        padding-top: 16px;
     }
 
     .logo img {
-        width: 125px;
+        width: 180px;
     }
 
     .nav-links {
@@ -470,17 +480,15 @@ footer div:last-child {
     }
 
     .hero {
-        min-height: 100vh;
+        padding: 265px 0 80px;
+    }
 
-        padding:
-            190px
-            5%
-            80px;
+    .hero-content {
+        width: 90%;
     }
 
     .hero h1 {
-        font-size: clamp(42px, 12vw, 58px);
-
+        font-size: clamp(42px, 11vw, 58px);
         line-height: 1.08;
         letter-spacing: -1px;
     }
@@ -542,11 +550,11 @@ footer div:last-child {
 @media (max-width: 500px) {
 
     .logo img {
-        width: 110px;
+        width: 155px;
     }
 
     .hero {
-        padding-top: 170px;
+        padding-top: 235px;
     }
 
     .hero h1 {
