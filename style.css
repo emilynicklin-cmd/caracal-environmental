@@ -50,6 +50,12 @@ a {
 
 /* ---------- Navigation ---------- */
 
+.logo img {
+    width: 210px;
+    height: auto;
+    display: block;
+}
+
 header {
     position: absolute;
     width: 100%;
