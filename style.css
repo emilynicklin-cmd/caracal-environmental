@@ -55,46 +55,50 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     z-index: 100;
 }
 
 nav {
-    width: min(1320px, 92%);
+    width: min(1400px, 92%);
     margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
-    padding-top: 22px;
+    padding-top: 28px;
 }
 
 
-/* ---------- Logo ---------- */
+/* =========================================
+   LOGO
+   ========================================= */
 
 .logo {
     display: block;
+    flex-shrink: 0;
     line-height: 0;
 }
 
 .logo img {
-    width: 260px;
+    width: 280px;
     height: auto;
     display: block;
+    object-fit: contain;
 }
 
 
-/* ---------- Navigation ---------- */
+/* =========================================
+   NAVIGATION
+   ========================================= */
 
 .nav-links {
     display: flex;
     align-items: center;
-
     gap: 42px;
 
-    padding-top: 32px;
+    padding-top: 36px;
 }
 
 .nav-links a {
@@ -105,6 +109,8 @@ nav {
 
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    white-space: nowrap;
 
     transition: color 0.3s ease;
 }
@@ -122,20 +128,24 @@ nav {
     min-height: 100vh;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     background-color: var(--black);
 
-    padding: 245px 0 100px;
+    /*
+       Gives the logo/header its own space.
+       Hero content starts underneath it.
+    */
+    padding: 350px 0 110px;
 }
 
 .hero-content {
-    width: min(1320px, 92%);
+    width: min(1400px, 92%);
     margin: 0 auto;
 }
 
 
-/* ---------- Orange label ---------- */
+/* Orange label */
 
 .eyebrow {
     color: var(--orange);
@@ -150,25 +160,25 @@ nav {
 }
 
 
-/* ---------- Main heading ---------- */
+/* Main hero heading */
 
 .hero h1 {
     max-width: 950px;
 
-    font-size: clamp(48px, 5vw, 74px);
+    font-size: clamp(54px, 5.3vw, 82px);
     font-weight: 300;
 
-    line-height: 1.07;
-    letter-spacing: -1.5px;
+    line-height: 1.05;
+    letter-spacing: -2px;
 
     margin-bottom: 35px;
 }
 
 
-/* ---------- Introductory text ---------- */
+/* Hero description */
 
 .hero-text {
-    max-width: 680px;
+    max-width: 760px;
 
     color: var(--grey);
 
@@ -176,6 +186,78 @@ nav {
     line-height: 1.8;
 
     margin-bottom: 40px;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        width: 90%;
+        padding-top: 22px;
+    }
+
+    .logo img {
+        width: 230px;
+    }
+
+    .nav-links {
+        gap: 22px;
+        padding-top: 28px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero {
+        padding-top: 300px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    nav {
+        width: 90%;
+    }
+
+    .logo img {
+        width: 210px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 270px 0 80px;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12vw, 58px);
+        line-height: 1.08;
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
 }
 
 
