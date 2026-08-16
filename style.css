@@ -362,22 +362,52 @@ nav {
 
 .how-it-works-image {
     width: 100%;
+    margin: 45px auto 70px;
 
-    margin-top: 45px;
-    margin-bottom: 70px;
-
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .how-it-works-image img {
     display: block;
 
-    width: 100%;
+    width: 85%;
+    max-width: 1050px;
     height: auto;
 
     object-fit: contain;
 
-    border: 1px solid #2a2a2a;
+    border: 1px solid #333333;
+}
+
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+    .how-it-works-image {
+        margin: 35px auto 50px;
+    }
+
+    .how-it-works-image img {
+        width: 92%;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .how-it-works-image {
+        margin: 30px auto 40px;
+    }
+
+    .how-it-works-image img {
+        width: 100%;
+    }
+
 }
 
 
