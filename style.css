@@ -145,9 +145,6 @@ nav {
     margin: 0 auto;
 }
 
-
-/* Hero label */
-
 .eyebrow {
     color: var(--orange);
 
@@ -160,9 +157,6 @@ nav {
     margin-bottom: 24px;
 }
 
-
-/* Hero heading */
-
 .hero h1 {
     max-width: 1000px;
 
@@ -174,9 +168,6 @@ nav {
 
     margin-bottom: 32px;
 }
-
-
-/* Hero description */
 
 .hero-text {
     max-width: 760px;
@@ -299,12 +290,57 @@ nav {
 
 
 /* =========================================
-   CHALLENGE
+   CHALLENGE SECTION
    ========================================= */
 
 .challenge-section {
     padding-top: 45px;
     padding-bottom: 55px;
+}
+
+.challenge-grid {
+    display: grid;
+
+    grid-template-columns: 1.05fr 0.95fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.challenge-content h2 {
+    max-width: 680px;
+}
+
+.challenge-content p {
+    max-width: 680px;
+
+    color: var(--grey);
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    margin-bottom: 16px;
+}
+
+.challenge-image {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.challenge-image img {
+    display: block;
+
+    width: 100%;
+    height: 520px;
+
+    object-fit: cover;
+
+    border: 1px solid var(--border);
 }
 
 
@@ -337,6 +373,7 @@ nav {
 
 .process-item:hover {
     background-color: var(--charcoal-light);
+
     transform: translateY(-5px);
 }
 
@@ -671,6 +708,14 @@ footer div:last-child {
         font-size: clamp(46px, 7vw, 68px);
     }
 
+    .challenge-grid {
+        gap: 45px;
+    }
+
+    .challenge-image img {
+        height: 460px;
+    }
+
     .how-it-works-image img {
         width: 55%;
         max-width: 540px;
@@ -751,6 +796,28 @@ footer div:last-child {
         padding-right: 5%;
     }
 
+
+    /* Challenge */
+
+    .challenge-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .challenge-content h2,
+    .challenge-content p {
+        max-width: 100%;
+    }
+
+    .challenge-image img {
+        width: 100%;
+        height: 380px;
+    }
+
+
+    /* Process */
+
     .process {
         grid-template-columns: 1fr;
     }
@@ -763,6 +830,9 @@ footer div:last-child {
         margin-bottom: 25px;
     }
 
+
+    /* How it works image */
+
     .how-it-works-image {
         margin: 30px auto 45px;
     }
@@ -771,6 +841,9 @@ footer div:last-child {
         width: 70%;
         max-width: 500px;
     }
+
+
+    /* Dashboard image */
 
     .dashboard-image {
         margin: 28px auto 35px;
@@ -781,14 +854,23 @@ footer div:last-child {
         max-width: 760px;
     }
 
+
+    /* Cards */
+
     .partner-grid {
         grid-template-columns: 1fr;
     }
+
+
+    /* Contact */
 
     .contact-section {
         padding-top: 65px;
         padding-bottom: 65px;
     }
+
+
+    /* Footer */
 
     footer {
         flex-direction: column;
@@ -840,6 +922,16 @@ footer div:last-child {
         padding: 28px;
     }
 
+
+    /* Challenge */
+
+    .challenge-image img {
+        height: 280px;
+    }
+
+
+    /* How it works image */
+
     .how-it-works-image {
         margin: 28px auto 38px;
     }
@@ -848,6 +940,9 @@ footer div:last-child {
         width: 95%;
         max-width: 430px;
     }
+
+
+    /* Dashboard image */
 
     .dashboard-image {
         margin: 25px auto 32px;
