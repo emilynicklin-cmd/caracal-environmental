@@ -37,8 +37,10 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+
     background-color: var(--black);
     color: var(--white);
+
     line-height: 1.7;
 }
 
@@ -58,6 +60,7 @@ a {
 
 header {
     width: 100%;
+
     background-color: var(--black);
 }
 
@@ -79,7 +82,9 @@ nav {
 
 .logo {
     display: block;
+
     flex-shrink: 0;
+
     line-height: 0;
 }
 
@@ -113,6 +118,7 @@ nav {
     font-weight: 500;
 
     letter-spacing: 2px;
+
     text-transform: uppercase;
 
     white-space: nowrap;
@@ -135,18 +141,15 @@ nav {
     display: flex;
     align-items: flex-start;
 
-    background-color: var(--black);
-
     padding: 45px 0 100px;
+
+    background-color: var(--black);
 }
 
 .hero-content {
     width: min(1400px, 92%);
     margin: 0 auto;
 }
-
-
-/* Hero label */
 
 .eyebrow {
     color: var(--orange);
@@ -155,13 +158,11 @@ nav {
     font-weight: 600;
 
     letter-spacing: 4px;
+
     text-transform: uppercase;
 
     margin-bottom: 24px;
 }
-
-
-/* Hero heading */
 
 .hero h1 {
     max-width: 1000px;
@@ -174,9 +175,6 @@ nav {
 
     margin-bottom: 32px;
 }
-
-
-/* Hero description */
 
 .hero-text {
     max-width: 760px;
@@ -202,12 +200,14 @@ nav {
     border: 1px solid var(--orange);
 
     background-color: transparent;
+
     color: var(--white);
 
     font-size: 11px;
     font-weight: 600;
 
     letter-spacing: 2px;
+
     text-transform: uppercase;
 
     transition:
@@ -218,6 +218,7 @@ nav {
 
 .button:hover {
     background-color: var(--orange);
+
     color: var(--black);
 
     transform: translateY(-2px);
@@ -242,6 +243,7 @@ nav {
     font-weight: 600;
 
     letter-spacing: 4px;
+
     text-transform: uppercase;
 
     margin-bottom: 20px;
@@ -300,11 +302,11 @@ nav {
 
 /* =========================================
    PROCESS
-   Detect / Alert / Ground-truth / Respond
    ========================================= */
 
 .process {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
 
     gap: 1px;
@@ -338,6 +340,7 @@ nav {
     color: var(--orange);
 
     font-size: 11px;
+
     letter-spacing: 2px;
 
     margin-bottom: 42px;
@@ -362,6 +365,11 @@ nav {
    HOW IT WORKS IMAGE
    ========================================= */
 
+/*
+   Keeps the fire-detection diagram small,
+   centred and visually separate from the text.
+*/
+
 .how-it-works-image {
     width: 100%;
 
@@ -369,36 +377,30 @@ nav {
     justify-content: center;
     align-items: center;
 
-    margin: 50px auto 75px;
+    margin: 45px auto 70px;
 }
-
-
-/*
-   IMPORTANT:
-   This limits the diagram so it does not
-   dominate the How It Works section.
-*/
 
 .how-it-works-image img {
     display: block;
 
-    width: 70%;
-    max-width: 800px;
+    width: 50%;
+    max-width: 600px;
+    min-width: 0;
+
     height: auto;
 
     object-fit: contain;
 
-    border: 1px solid #383838;
-
-    padding: 4px;
-
     background-color: #ffffff;
+
+    border: 1px solid #404040;
+
+    padding: 3px;
 }
 
 
 /* =========================================
    SYSTEM FLOW
-   Camera → Sensors → Satellite → Dashboard
    ========================================= */
 
 .system-flow {
@@ -432,6 +434,7 @@ nav {
 
 .system-step:hover {
     border-color: var(--orange);
+
     background-color: var(--charcoal);
 
     transform: translateY(-4px);
@@ -446,6 +449,7 @@ nav {
     font-weight: 600;
 
     letter-spacing: 2px;
+
     text-transform: uppercase;
 
     margin-bottom: 16px;
@@ -490,6 +494,7 @@ nav {
 
 .partner-grid {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
@@ -512,6 +517,7 @@ nav {
 
 .partner-card:hover {
     border-color: var(--orange);
+
     background-color: var(--charcoal);
 
     transform: translateY(-5px);
@@ -639,16 +645,11 @@ footer div:last-child {
         font-size: clamp(46px, 7vw, 68px);
     }
 
-
-    /* Diagram stays compact */
-
     .how-it-works-image img {
-        width: 72%;
-        max-width: 720px;
+        width: 55%;
+
+        max-width: 560px;
     }
-
-
-    /* System cards stack */
 
     .system-flow {
         grid-template-columns: 1fr;
@@ -699,6 +700,7 @@ footer div:last-child {
         font-size: clamp(42px, 11vw, 58px);
 
         line-height: 1.08;
+
         letter-spacing: -1px;
     }
 
@@ -719,9 +721,6 @@ footer div:last-child {
         padding-right: 5%;
     }
 
-
-    /* Process */
-
     .process {
         grid-template-columns: 1fr;
     }
@@ -734,35 +733,24 @@ footer div:last-child {
         margin-bottom: 25px;
     }
 
-
-    /* How it works diagram */
-
     .how-it-works-image {
         margin: 40px auto 55px;
     }
 
     .how-it-works-image img {
-        width: 85%;
-        max-width: 650px;
+        width: 70%;
+
+        max-width: 520px;
     }
-
-
-    /* Cards */
 
     .partner-grid {
         grid-template-columns: 1fr;
     }
 
-
-    /* Contact */
-
     .contact-section {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-
-
-    /* Footer */
 
     footer {
         flex-direction: column;
@@ -778,7 +766,7 @@ footer div:last-child {
 
 
 /* =========================================
-   MOBILE
+   SMALL MOBILE
    ========================================= */
 
 @media (max-width: 500px) {
@@ -810,17 +798,19 @@ footer div:last-child {
         padding: 28px;
     }
 
-
-    /* On phones the diagram needs more width
-       so that its labels remain readable */
+    /*
+       Wider on phones so the labels
+       remain readable.
+    */
 
     .how-it-works-image {
         margin: 35px auto 45px;
     }
 
     .how-it-works-image img {
-        width: 100%;
-        max-width: 100%;
+        width: 95%;
+
+        max-width: 430px;
     }
 
 }
