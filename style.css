@@ -4,7 +4,9 @@
    ========================================= */
 
 
-/* ---------- Brand colours ---------- */
+/* =========================================
+   BRAND COLOURS
+   ========================================= */
 
 :root {
     --black: #080808;
@@ -70,7 +72,9 @@ nav {
 }
 
 
-/* ---------- Logo ---------- */
+/* =========================================
+   LOGO
+   ========================================= */
 
 .logo {
     display: block;
@@ -81,16 +85,20 @@ nav {
 .logo img {
     width: 230px;
     height: auto;
+
     display: block;
     object-fit: contain;
 }
 
 
-/* ---------- Navigation links ---------- */
+/* =========================================
+   NAVIGATION LINKS
+   ========================================= */
 
 .nav-links {
     display: flex;
     align-items: center;
+
     gap: 38px;
 
     padding-top: 48px;
@@ -136,7 +144,7 @@ nav {
 }
 
 
-/* ---------- Orange hero label ---------- */
+/* ---------- Hero label ---------- */
 
 .eyebrow {
     color: var(--orange);
@@ -151,7 +159,7 @@ nav {
 }
 
 
-/* ---------- Main hero heading ---------- */
+/* ---------- Hero heading ---------- */
 
 .hero h1 {
     max-width: 1000px;
@@ -166,7 +174,7 @@ nav {
 }
 
 
-/* ---------- Hero text ---------- */
+/* ---------- Hero description ---------- */
 
 .hero-text {
     max-width: 760px;
@@ -290,6 +298,7 @@ nav {
 
 /* =========================================
    PROCESS CARDS
+   Detect / Alert / Ground-truth / Respond
    ========================================= */
 
 .process {
@@ -348,24 +357,69 @@ nav {
 
 
 /* =========================================
+   HOW IT WORKS IMAGE
+   ========================================= */
+
+.how-it-works-image {
+    width: 100%;
+
+    margin-top: 45px;
+    margin-bottom: 70px;
+
+    overflow: hidden;
+}
+
+.how-it-works-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    border: 1px solid #2a2a2a;
+}
+
+
+/* =========================================
    SYSTEM FLOW
+   Camera → Sensors → Satellite → Dashboard
    ========================================= */
 
 .system-flow {
     display: grid;
-    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+
+    grid-template-columns:
+        1fr auto
+        1fr auto
+        1fr auto
+        1fr;
+
     gap: 20px;
+
     align-items: stretch;
 
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .system-step {
-    border: 1px solid #2a2a2a;
-
     padding: 30px;
 
+    border: 1px solid #2a2a2a;
+
     background-color: var(--black);
+
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.system-step:hover {
+    border-color: var(--orange);
+    background-color: var(--charcoal);
+
+    transform: translateY(-4px);
 }
 
 .system-step span {
@@ -398,8 +452,13 @@ nav {
     margin-bottom: 12px;
 }
 
+.system-step p:last-child {
+    margin-bottom: 0;
+}
+
 .system-arrow {
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -520,6 +579,7 @@ footer strong {
     color: var(--white);
 
     font-weight: 500;
+
     letter-spacing: 3px;
 }
 
@@ -544,16 +604,19 @@ footer div:last-child {
 
     .nav-links {
         gap: 22px;
+
         padding-top: 40px;
     }
 
     .nav-links a {
         font-size: 10px;
+
         letter-spacing: 1.4px;
     }
 
     .hero {
         min-height: auto;
+
         padding: 45px 0 80px;
     }
 
@@ -563,11 +626,14 @@ footer div:last-child {
 
     .system-flow {
         grid-template-columns: 1fr;
+
+        gap: 15px;
     }
 
     .system-arrow {
-        transform: rotate(90deg);
         min-height: 30px;
+
+        transform: rotate(90deg);
     }
 
 }
@@ -581,6 +647,7 @@ footer div:last-child {
 
     nav {
         width: 90%;
+
         padding-top: 15px;
     }
 
@@ -594,6 +661,7 @@ footer div:last-child {
 
     .hero {
         min-height: auto;
+
         padding: 35px 0 75px;
     }
 
@@ -637,6 +705,11 @@ footer div:last-child {
         margin-bottom: 25px;
     }
 
+    .how-it-works-image {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+
     .partner-grid {
         grid-template-columns: 1fr;
     }
@@ -675,6 +748,7 @@ footer div:last-child {
 
     .eyebrow {
         font-size: 9px;
+
         letter-spacing: 3px;
     }
 
@@ -689,6 +763,11 @@ footer div:last-child {
     .partner-card,
     .system-step {
         padding: 28px;
+    }
+
+    .how-it-works-image {
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
 
 }
