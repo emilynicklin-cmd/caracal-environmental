@@ -1,6 +1,6 @@
 /* =========================================
    CARACAL ENVIRONMENTAL
-   Website Styling
+   WEBSITE STYLING
    ========================================= */
 
 
@@ -17,6 +17,7 @@
     --off-white: #f4f1ed;
     --grey: #b8b8b8;
     --dark-grey: #777777;
+    --border: #2a2a2a;
 }
 
 
@@ -52,7 +53,7 @@ a {
 
 
 /* =========================================
-   HEADER / NAVIGATION
+   HEADER
    ========================================= */
 
 header {
@@ -83,16 +84,17 @@ nav {
 }
 
 .logo img {
+    display: block;
+
     width: 230px;
     height: auto;
 
-    display: block;
     object-fit: contain;
 }
 
 
 /* =========================================
-   NAVIGATION LINKS
+   NAVIGATION
    ========================================= */
 
 .nav-links {
@@ -144,7 +146,7 @@ nav {
 }
 
 
-/* ---------- Hero label ---------- */
+/* Hero label */
 
 .eyebrow {
     color: var(--orange);
@@ -159,7 +161,7 @@ nav {
 }
 
 
-/* ---------- Hero heading ---------- */
+/* Hero heading */
 
 .hero h1 {
     max-width: 1000px;
@@ -174,7 +176,7 @@ nav {
 }
 
 
-/* ---------- Hero description ---------- */
+/* Hero description */
 
 .hero-text {
     max-width: 760px;
@@ -297,7 +299,7 @@ nav {
 
 
 /* =========================================
-   PROCESS CARDS
+   PROCESS
    Detect / Alert / Ground-truth / Respond
    ========================================= */
 
@@ -362,52 +364,35 @@ nav {
 
 .how-it-works-image {
     width: 100%;
-    margin: 45px auto 70px;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    margin: 50px auto 75px;
 }
+
+
+/*
+   IMPORTANT:
+   This limits the diagram so it does not
+   dominate the How It Works section.
+*/
 
 .how-it-works-image img {
     display: block;
 
-    width: 85%;
-    max-width: 1050px;
+    width: 70%;
+    max-width: 800px;
     height: auto;
 
     object-fit: contain;
 
-    border: 1px solid #333333;
-}
+    border: 1px solid #383838;
 
+    padding: 4px;
 
-/* Tablet */
-
-@media (max-width: 850px) {
-
-    .how-it-works-image {
-        margin: 35px auto 50px;
-    }
-
-    .how-it-works-image img {
-        width: 92%;
-    }
-
-}
-
-
-/* Mobile */
-
-@media (max-width: 500px) {
-
-    .how-it-works-image {
-        margin: 30px auto 40px;
-    }
-
-    .how-it-works-image img {
-        width: 100%;
-    }
-
+    background-color: #ffffff;
 }
 
 
@@ -435,7 +420,7 @@ nav {
 .system-step {
     padding: 30px;
 
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border);
 
     background-color: var(--black);
 
@@ -517,7 +502,7 @@ nav {
 
     padding: 38px;
 
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--border);
 
     transition:
         border-color 0.3s ease,
@@ -654,6 +639,17 @@ footer div:last-child {
         font-size: clamp(46px, 7vw, 68px);
     }
 
+
+    /* Diagram stays compact */
+
+    .how-it-works-image img {
+        width: 72%;
+        max-width: 720px;
+    }
+
+
+    /* System cards stack */
+
     .system-flow {
         grid-template-columns: 1fr;
 
@@ -723,6 +719,9 @@ footer div:last-child {
         padding-right: 5%;
     }
 
+
+    /* Process */
+
     .process {
         grid-template-columns: 1fr;
     }
@@ -735,19 +734,35 @@ footer div:last-child {
         margin-bottom: 25px;
     }
 
+
+    /* How it works diagram */
+
     .how-it-works-image {
-        margin-top: 35px;
-        margin-bottom: 50px;
+        margin: 40px auto 55px;
     }
+
+    .how-it-works-image img {
+        width: 85%;
+        max-width: 650px;
+    }
+
+
+    /* Cards */
 
     .partner-grid {
         grid-template-columns: 1fr;
     }
 
+
+    /* Contact */
+
     .contact-section {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
+
+    /* Footer */
 
     footer {
         flex-direction: column;
@@ -763,7 +778,7 @@ footer div:last-child {
 
 
 /* =========================================
-   SMALL MOBILE
+   MOBILE
    ========================================= */
 
 @media (max-width: 500px) {
@@ -795,9 +810,17 @@ footer div:last-child {
         padding: 28px;
     }
 
+
+    /* On phones the diagram needs more width
+       so that its labels remain readable */
+
     .how-it-works-image {
-        margin-top: 30px;
-        margin-bottom: 40px;
+        margin: 35px auto 45px;
+    }
+
+    .how-it-works-image img {
+        width: 100%;
+        max-width: 100%;
     }
 
 }
