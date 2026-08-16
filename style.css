@@ -37,10 +37,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background-color: var(--black);
     color: var(--white);
-
     line-height: 1.7;
 }
 
@@ -60,7 +58,6 @@ a {
 
 header {
     width: 100%;
-
     background-color: var(--black);
 }
 
@@ -72,7 +69,7 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
 
-    padding: 20px 0 10px;
+    padding: 18px 0 0;
 }
 
 
@@ -82,16 +79,14 @@ nav {
 
 .logo {
     display: block;
-
     flex-shrink: 0;
-
     line-height: 0;
 }
 
 .logo img {
     display: block;
 
-    width: 230px;
+    width: 310px;
     height: auto;
 
     object-fit: contain;
@@ -108,7 +103,7 @@ nav {
 
     gap: 38px;
 
-    padding-top: 48px;
+    padding-top: 58px;
 }
 
 .nav-links a {
@@ -118,7 +113,6 @@ nav {
     font-weight: 500;
 
     letter-spacing: 2px;
-
     text-transform: uppercase;
 
     white-space: nowrap;
@@ -136,20 +130,23 @@ nav {
    ========================================= */
 
 .hero {
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 310px);
 
     display: flex;
     align-items: flex-start;
 
-    padding: 45px 0 100px;
-
     background-color: var(--black);
+
+    padding: 30px 0 100px;
 }
 
 .hero-content {
     width: min(1400px, 92%);
     margin: 0 auto;
 }
+
+
+/* Hero label */
 
 .eyebrow {
     color: var(--orange);
@@ -158,11 +155,13 @@ nav {
     font-weight: 600;
 
     letter-spacing: 4px;
-
     text-transform: uppercase;
 
     margin-bottom: 24px;
 }
+
+
+/* Hero heading */
 
 .hero h1 {
     max-width: 1000px;
@@ -175,6 +174,9 @@ nav {
 
     margin-bottom: 32px;
 }
+
+
+/* Hero description */
 
 .hero-text {
     max-width: 760px;
@@ -200,14 +202,12 @@ nav {
     border: 1px solid var(--orange);
 
     background-color: transparent;
-
     color: var(--white);
 
     font-size: 11px;
     font-weight: 600;
 
     letter-spacing: 2px;
-
     text-transform: uppercase;
 
     transition:
@@ -218,7 +218,6 @@ nav {
 
 .button:hover {
     background-color: var(--orange);
-
     color: var(--black);
 
     transform: translateY(-2px);
@@ -243,7 +242,6 @@ nav {
     font-weight: 600;
 
     letter-spacing: 4px;
-
     text-transform: uppercase;
 
     margin-bottom: 20px;
@@ -306,7 +304,6 @@ nav {
 
 .process {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
 
     gap: 1px;
@@ -330,7 +327,6 @@ nav {
 
 .process-item:hover {
     background-color: var(--charcoal-light);
-
     transform: translateY(-5px);
 }
 
@@ -340,7 +336,6 @@ nav {
     color: var(--orange);
 
     font-size: 11px;
-
     letter-spacing: 2px;
 
     margin-bottom: 42px;
@@ -364,11 +359,6 @@ nav {
 /* =========================================
    HOW IT WORKS IMAGE
    ========================================= */
-
-/*
-   Keeps the fire-detection diagram small,
-   centred and visually separate from the text.
-*/
 
 .how-it-works-image {
     width: 100%;
@@ -401,6 +391,7 @@ nav {
 
 /* =========================================
    SYSTEM FLOW
+   Camera → Sensors → Satellite → Dashboard
    ========================================= */
 
 .system-flow {
@@ -449,7 +440,6 @@ nav {
     font-weight: 600;
 
     letter-spacing: 2px;
-
     text-transform: uppercase;
 
     margin-bottom: 16px;
@@ -494,7 +484,6 @@ nav {
 
 .partner-grid {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
@@ -620,13 +609,13 @@ footer div:last-child {
     }
 
     .logo img {
-        width: 200px;
+        width: 250px;
     }
 
     .nav-links {
         gap: 22px;
 
-        padding-top: 40px;
+        padding-top: 48px;
     }
 
     .nav-links a {
@@ -638,7 +627,7 @@ footer div:last-child {
     .hero {
         min-height: auto;
 
-        padding: 45px 0 80px;
+        padding: 35px 0 80px;
     }
 
     .hero h1 {
@@ -679,7 +668,7 @@ footer div:last-child {
     }
 
     .logo img {
-        width: 180px;
+        width: 210px;
     }
 
     .nav-links {
@@ -689,7 +678,7 @@ footer div:last-child {
     .hero {
         min-height: auto;
 
-        padding: 35px 0 75px;
+        padding: 30px 0 75px;
     }
 
     .hero-content {
@@ -772,7 +761,7 @@ footer div:last-child {
 @media (max-width: 500px) {
 
     .logo img {
-        width: 165px;
+        width: 180px;
     }
 
     .hero {
@@ -797,11 +786,6 @@ footer div:last-child {
     .system-step {
         padding: 28px;
     }
-
-    /*
-       Wider on phones so the labels
-       remain readable.
-    */
 
     .how-it-works-image {
         margin: 35px auto 45px;
