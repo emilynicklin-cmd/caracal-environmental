@@ -526,6 +526,70 @@ nav {
     line-height: 1.7;
 }
 
+/* =========================================
+   DASHBOARD IMAGE
+   ========================================= */
+
+.dashboard-image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 35px auto 45px;
+}
+
+.dashboard-image img {
+    display: block;
+
+    width: 78%;
+    max-width: 950px;
+    height: auto;
+
+    object-fit: contain;
+
+    border: 1px solid #3a3a3a;
+
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   DASHBOARD IMAGE — TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .dashboard-image {
+        margin: 30px auto 40px;
+    }
+
+    .dashboard-image img {
+        width: 92%;
+        max-width: 760px;
+    }
+
+}
+
+
+/* =========================================
+   DASHBOARD IMAGE — MOBILE
+   ========================================= */
+
+@media (max-width: 500px) {
+
+    .dashboard-image {
+        margin: 25px auto 35px;
+    }
+
+    .dashboard-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
 
 /* =========================================
    PILOT
